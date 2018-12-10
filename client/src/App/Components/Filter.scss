@@ -1,0 +1,36 @@
+.Filter {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 20px;
+    max-height: 30vh;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.42;
+    letter-spacing: 0.3px;
+    .checkbox {
+        margin: 15px;
+    }
+    .pill {
+        border-width: 2px;  
+        border-style: solid;
+        border-color: red;
+        padding: 2px 4px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 16px;
+        height: 30px;
+        .number {
+            padding: 4px 8px 2px 8px;
+            display: inherit;
+            margin: 4px 4px;
+            background-color: red;
+            border-radius: 16px;
+        }
+    }
+}

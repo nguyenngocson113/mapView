@@ -1,0 +1,109 @@
+.Map {
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    // height: '100px';
+    // width: '100%';
+}
+
+.Marker {
+    float: left;
+    position: relative;
+    cursor: pointer;
+    top: -32px;
+    left: -32px;;
+    &-show {
+        margin-left: -188px;
+    }
+    .Popup {
+        background: #F8F8F8;
+        position: relative;
+        padding: 0 20px;
+        margin-top: -325px;
+        height: 258px;
+        width: 400px;
+        opacity: 0.9;
+        z-index: 99;
+        &:after{
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            width: 10px;
+            height: 10px;
+            background: #f8f8f8;
+            left: 50%;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);    
+        }
+        .close {
+            position: absolute;
+            right: 15px;
+            height: 15px;
+            opacity: 0.3;
+            width: 15px;
+            top: 15px;
+        }
+        .close:hover {
+            opacity: 1;
+        }
+        .close:before, .close:after {
+            position: absolute;
+            left: 10px;
+            content: ' ';
+            height: 10px;
+            width: 2px;
+            background-color: #333;
+        }
+        .close:before {
+            transform: rotate(45deg);
+        }
+        .close:after {
+            transform: rotate(-45deg);
+        }
+        .info {
+            line-height: 1.8;
+            text-align: left;
+            font-family: Roboto;
+            font-size: 13px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: 0.3px;
+            color: #404040;
+            padding: 8px;
+            .user {
+                p {
+                    margin: unset;
+                }
+                &-strong {
+                    font-weight: bold;
+                }
+            }
+            .address {
+                float: left;
+            }
+            .time {
+                float: right;
+                font-size: 11px;
+            }
+            .car {
+                margin-top: 40px;
+                .wrapper {
+                    &-title {
+                        float: left;
+                        margin-right: 50px;
+                        width: 100px;
+                    }
+                    &-status {
+                        display: grid;
+                        p {
+                            margin: unset;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
